@@ -1,9 +1,9 @@
 import './assets/main.css'
 
 import { createApp } from 'vue'
-import App from './App.vue'
 import Navbar from '../src/components/navbar.vue'
+import intro from '../src/components/introduction.vue'
 
-// createApp(navbar).mount('#app')
 createApp(Navbar).mount('#navbar')
+createApp(intro).mount('#introduction')
 
