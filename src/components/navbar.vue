@@ -15,16 +15,35 @@
 </template>
 
 
+<script>
+window.onscroll = function() {
+  var positionY = window.scrollY
+  var navbarE = document.getElementById('navbar')
+  if (positionY > 0) {
+    navbarE.classList.add('navbarChange');
+  }else{
+    navbarE.classList.remove('navbarChange');
+  }
+};
+</script>
+
 <style>
 .navbar{
     position: sticky;
-    top:0px;
+    top:10px;
     border-radius: 10px;
     width: 90vw;
     margin: 0 auto;
     font-weight: 500;
+    transition: background 0.5s;
   }
-  
+
+  .navbarChange {
+    background-color:  #FBFAF8;
+    color: aliceblue;
+    border:1px solid black;
+  }
+
   .navbar-container{
     width:100%;
     align-items: center;
@@ -41,7 +60,7 @@
     transition: width 0.5s;
   }
   .container-nav .icon-navbar > a{
-    color: var(--main-color);
+    color: var(--black-font);
     display: flex;
     font-size: 3rem;
     text-decoration: none;

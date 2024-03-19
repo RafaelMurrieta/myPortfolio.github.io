@@ -1,7 +1,5 @@
 <template>
-    <div class="worksColor" id="worksColor">
-        <span>{{ textoAct }}</span>
-    </div>
+
     <div class="containerIntro">
         
         <div class="works">
@@ -12,12 +10,15 @@
         <div class="image">
             <img src="../assets/RafaelMurrieta.jpg" alt="">
         </div>
+        
+    </div>
+    <div class="worksColor" id="worksColor">
+        <span>{{ textoAct }}</span>
     </div>
 </template>
 
 <style>
 .conainterIntrod{
-    margin-top: 2%;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -27,7 +28,7 @@
     align-items: center;
     justify-content: center;
     width: 90vw;
-    height: 80vh;
+    height: 70vh;
 }
 
 .works {
@@ -37,11 +38,12 @@
     font-weight: 600;
     font-size: 4rem;
     width: 100%;
-    margin: 0 0 0 20%;
+    margin: 0 5% 0 20%;
     height: 100%;
 }
 
 .worksColor {
+    margin-bottom: 5%;
     display: grid;
     align-content: center;
     justify-content: center;
