@@ -19,3 +19,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+var theme = localStorage.getItem("theme");
+if (theme == "dark") {
+    const body = document.querySelector('body')
+    body.classList.toggle('dark-mode')
+}

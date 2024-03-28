@@ -14,11 +14,17 @@
 }
 
 body{
+  transition: background 0.5s;
   color: var(--black-font);
   background-color: var(--second-color);
   display: grid;
-  
 }
+
+.dark-mode{
+  background-color: #333; 
+  color: #fff;
+}
+
 
 ::-webkit-scrollbar {
   width: 10px;
