@@ -1,52 +1,73 @@
 <template>
+
     <div class="containerIntro">
+        
         <div class="works">
+            
             <div class="name">Rafael Cienfuegos Murrieta</div>
-            <div class="worksColor" id="worksColor">
-                <span>{{ textoAct }}</span>
-            </div>
+
         </div>
         <div class="image">
             <img src="../assets/RafaelMurrieta.jpg" alt="">
         </div>
+        
+    </div>
+    <div class="worksColor" id="worksColor">
+        <span>{{ textoAct }}</span>
     </div>
 </template>
 
 <style>
+.conainterIntrod{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
 .containerIntro {
-    margin: 0 auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 90vw;
-    height: 80vh;
+    height: 70vh;
 }
 
 .works {
     display: grid;
     align-content: center;
-    color: var(--second-color);
+    color: var(---black-font);
     font-weight: 600;
     font-size: 4rem;
     width: 100%;
+    margin: 0 5% 0 20%;
     height: 100%;
 }
 
 .worksColor {
-    margin-top: 40px;
-    color: var(--second-color);
+    margin-bottom: 5%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 4rem;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #cccccc;
+    color: transparent;
+    text-shadow: 4px 10px 9px rgba(255,255,255,0.9);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    z-index: -100;
 }
 
 .image {
-    display: grid;
-    justify-content: right;
-    align-content: center;
     width: 100%;
-    height: 100%;
 }
 
 .image img {
-    border-radius: 10px;
+    border-radius: 50%;
     margin-top: 40px;
     max-width: 50%;
 }
@@ -63,7 +84,8 @@ export default {
                 'Constante aprendizaje',
                 'Mejorar cada dia',
                 'Gamer',
-                'Full stack',
+                'Front end',
+                'Back end',
                 ''
             ],
             index: 0,
